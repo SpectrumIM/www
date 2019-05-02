@@ -5,8 +5,6 @@ title: Spectrum 2
 
 Spectrum 2 consist of several separate parts which cooperates together. This page describes them.
 
-(*!backend.png!*)
-
 ## Spectrum 2 instance, Spectrum 2 main process and backends
 
 This chapter describes differences between Spectrum 2 instance, Spectrum 2 main process and Spectrum 2 backends.
