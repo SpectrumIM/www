@@ -7,6 +7,32 @@ Spectrum 2 consist of several separate parts which cooperates together. This pag
 
 (*!backend.png!*)
 
+## Spectrum 2 instance, Spectrum 2 main process and backends
+
+This chapter describes differences between Spectrum 2 instance, Spectrum 2 main process and Spectrum 2 backends.
+
+### Spectrum 2 instance
+
+In server mode, Spectrum 2 instance is single XMPP server. In gateway mode, it is single XMPP gateway. We can say these statements about Spectrum 2 instance:
+
+- One instance is defined by one configuration file (By default stored in /etc/spectrum2/transports/).
+- Spectrum 2 instance is represented to end user by its Jabber ID (for example icq.domain.tld).
+- Internally every Spectrum 2 instance consists of Spectrum 2 main process and Spectrum 2 backends.
+- One instance can run just one type of Spectrum 2 backend.
+
+### Spectrum 2 main process
+
+Spectrum 2 main process is the main process of Spectrum 2 instance.
+
+- Spectrum 2 main process is responsible for running Spectrum 2 backends and routing users' requests to proper backend.
+- By default the logs of Spectrum 2 main process are stored in /var/log/spectrum2/<jid>/spectrum2.log.
+
+### Spectrum 2 backend
+
+Spectrum 2 backend is special application run by Spectrum 2 main process. The goal of Spectrum 2 backend is to handle users's sessions. Spectrum 2 main process can handle more Spectrum 2 backends, but all messages from single user are always handled by the same backend.
+
+One Spectrum 2 instance can run only one type of Spectrum 2 backend.
+
 ## Where are all those things in git-tree?
 
 Directory| Description
@@ -81,4 +107,4 @@ Spectrum 2 spawns the backend and gives it `"--host localhost --port 32453"` par
 
 ## Frontends
 
-Frontends allow communication with the network Spectrum 2 users are using. Frontends are statically linked libraries currently. They are implementing `./include/transport/Frontend.h" class.
+Frontends allow communication with the network Spectrum 2 users are using. Frontends are statically linked libraries currently. They are implementing `./include/transport/Frontend.h` class.
