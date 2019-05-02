@@ -5,13 +5,15 @@ title: Spectrum 2
 
 ## Editing the configuration file
 
-To configure Spectrum 2 to use PostgreSQL database, you have to edit following options in database section:
+To configure Spectrum 2 to use PostgreSQL database, you have to edit some or more of the following options in database section.
+Please note that connectionstring overrides everything else (aside from type).
 
 Section | Key | Type | Change to value | Description
 --------|-----|------|-----------------|------------
 database| type | string | pqxx | Database type - "none", "mysql", "sqlite3", "pqxx".
 database| database | string | Name of the already create empty database | Database used to store data.
 database| server | string | Database server | Database server.
+database| port | string | Database port | Database port.
 database| user | string | PostgreSQL user. | PostgreSQL user.
 database| password | string | PostgreSQL Password. | PostgreSQL Password.
 database| prefix | string | | Prefix of tables in database.
