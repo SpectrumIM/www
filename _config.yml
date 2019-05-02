@@ -127,3 +127,9 @@ JB :
 gems:
   - jekyll-redirect-from
   - jekyll-sitemap
+
+title: Spectrum 2
+description: Spectrum 2 transports
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-slate
