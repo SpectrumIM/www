@@ -28,6 +28,7 @@ title: Spectrum 2
 * [Libpurple backend](backends/libpurple.html)
 * [Libcommuni backend](backends/libcommuni.html)
 * [Twitter backend](backends/twitter.html)
+* [Swiften backend](backends/swiften.html)
 * [Transwhat backend](backends/transwhat.html)
 
 #### Tutorials
