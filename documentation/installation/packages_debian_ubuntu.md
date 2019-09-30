@@ -25,6 +25,7 @@ You need to rebuild source libcommuni and spectrum packages from our source pack
         $ echo "deb-src https://packages.spectrum.im/spectrum2/ buster main" | sudo tee /etc/apt/sources.list.d/spectrum.list
         $ apt-get update
         $ apt-get build-dep communi
+        $ apt-get source communi
         $ cd communi-3.5.0 && DEB_BUILD_OPTIONS=nocheck dpkg-buildpackage -rfakeroot -us -uc  && cd .. && sudo dpkg -i libcommuni*.deb
         $ apt-get build-dep spectrum2
         $ cd spectrum2_2.0.12-1 && DEB_BUILD_OPTIONS=nocheck dpkg-buildpackage -rfakeroot -us -uc  && cd ..
