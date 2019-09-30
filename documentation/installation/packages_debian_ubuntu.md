@@ -30,7 +30,7 @@ You need to rebuild source libcommuni and spectrum packages from our source pack
         $ apt-get build-dep spectrum2
         $ apt-get source spectrum2
         $ apt-get install libminiupnpc-dev libnatpmp-dev
-        $ cd spectrum2_2.0.12-1 && DEB_BUILD_OPTIONS=nocheck dpkg-buildpackage -rfakeroot -us -uc  && cd ..
+        $ cd spectrum2_2.0.12 && DEB_BUILD_OPTIONS=nocheck dpkg-buildpackage -rfakeroot -us -uc  && cd ..
 
 When the compilation process has ended the .deb packages for libcommuni and spectrum will be generated in the current directory and can be installed with `dpkg -i < filename.deb >`.
 
