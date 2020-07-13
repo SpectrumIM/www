@@ -1,16 +1,16 @@
 Prerequisites
 =============
 
-1. Microsoft Visual C++ 2010 Express or higher edition (http://www.microsoft.com/visualstudio/en-us/products/2010-editions/visual-cpp-express)
-2. Git for Windows (http://code.google.com/p/msysgit/downloads/list)
+1. Microsoft Build Tools (https://visualstudio.microsoft.com/downloads/)
+2. Git for Windows (https://git-scm.com/download/win)
 3. CMake 2.8 or newer (http://www.cmake.org/cmake/resources/software.html)
 4. Python 2.x for Swiften build scripts (scons) (http://www.python.org)
 
 Libraries
 =========
 3. Swiften library (http://swift.im/git/swift)
-4. Boost 1.48 or newer (http://sourceforge.net/projects/boost/files/boost/1.49.0/)
-5. Google ProtoBuf library (http://code.google.com/p/protobuf/downloads/list)
+4. Boost 1.48 or newer (http://boost.org/)
+5. Google ProtoBuf library (https://developers.google.com/protocol-buffers/)
 
 
 Environment
@@ -26,17 +26,17 @@ launch "Visual Studio 2010 command prompt" or
 1. unpack and build boost libraries:
 
 	bootstrap.bat
-	b2.exe --without-mpi --without-python
-	b2.exe --without-mpi --without-python install --prefix=C:\env-msvc-x64 release
+	b2.exe --without-mpi --without-python threading=multi variant=release link=shared runtime-link=shared address-model=64 --layout=system
+	b2.exe --without-mpi --without-python threading=multi variant=release link=shared runtime-link=shared address-model=64 --layout=system install --prefix=C:\env-msvc-x64
 
 2. clone swift repository and build it. Don't forget to point it to our env directory:
 
 	git clone git://swift.im/swift
 	cd swift
-	echo boost_includedir="c:/env-msvc-x64/include/boost-1_49" > config.py
+	echo boost_includedir="c:/env-msvc-x64/include" > config.py
 	echo boost_libdir="c:/env-msvc-x64/lib" >> config.py 
-	scons.bat debug=no SWIFTEN_INSTALLDIR=C:\env-msvc-x64 force_configure=1
-	scons.bat debug=no SWIFTEN_INSTALLDIR=C:\env-msvc-x64 C:\env-msvc-x64
+	scons.bat Swiften debug=no optimize=yes SWIFTEN_INSTALLDIR=C:\env-msvc-x64 force_configure=1
+	scons.bat Swiften debug=no optimize=yes SWIFTEN_INSTALLDIR=C:\env-msvc-x64 C:\env-msvc-x64
 
 3. unpack and compile protobuf as described in its documentation. 
 
