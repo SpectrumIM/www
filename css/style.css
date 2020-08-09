@@ -53,8 +53,11 @@ body {
 }
 
 .animation {
+  display: block;
   width: 320px;
   height: 90px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #menu {
