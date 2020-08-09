@@ -139,7 +139,7 @@ Type:|string
 Default:|empty string
 
 This option configures full path to PKCS#12 certificate which is used for SSL in server-mode. To find out, how to create
-such certificate, please read [Using SSL in server mode](http://spectrum.im/documentation/configuration/server_ssl.html).
+such certificate, please read [Using SSL in server mode](/documentation/configuration/server_ssl.html).
 
 #### service.cert_password
 

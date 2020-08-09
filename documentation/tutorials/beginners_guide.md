@@ -5,7 +5,7 @@ title: Spectrum 2
 
 # Spectrum 2 setup guide for beginners
 
-I've created this guide to help beginners like me setup Spectrum 2. If you don't know what Spectrum 2 is, use this [link](http://spectrum.im/) to learn more about it. If you already know about XMPP and Spectrum 2, the [official documentation](http://spectrum.im/documentation/admin.html) will be better suited for you.
+I've created this guide to help beginners like me setup Spectrum 2. If you don't know what Spectrum 2 is, use this [link](/) to learn more about it. If you already know about XMPP and Spectrum 2, the [official documentation](/documentation/admin.html) will be better suited for you.
 
 ## Requirements
 * An XMPP server (in this guide I'll be using Prosody)

@@ -18,7 +18,7 @@ service | base_location | string | / | Base location (directory) on which the We
 service | data_dir | string | /var/lib/spectrum2_manager/html | Path to the Web Interface static data.
 service | cert | string | | Web interface certificate in PEM format when TLS should be used. Empty otherwise.
 logging | config | string | /etc/spectrum2/manager_logging.cfg | Path to the logging configuration file in the same format as for the Spectrum 2.
-database | ... | ... | ... | Database to store the Web Interface data. The variables are the same as in the [Spectrum 2 config files](http://spectrum.im/documentation/configuration/config_file.html#databasedatabase).
+database | ... | ... | ... | Database to store the Web Interface data. The variables are the same as in the [Spectrum 2 config files](/documentation/configuration/config_file.html#databasedatabase).
 
 ## Starting the Web Interface
 

@@ -5,8 +5,8 @@ title: Spectrum 2
 
 ### Before you start
 
-* Check that you really want to run Spectrum 2 in gateway mode and not in server mode. The difference is documentation on [What is Spectrum 2](http://spectrum.im/documentation/about.html) page.
-* Install Spectrum 2.  Installation is covered in [Installation section on the main page](http://spectrum.im/documentation/).
+* Check that you really want to run Spectrum 2 in gateway mode and not in server mode. The difference is documentation on [What is Spectrum 2](/documentation/about.html) page.
+* Install Spectrum 2.  Installation is covered in [Installation section on the main page](/documentation/).
 
 ### Configure your XMPP server
 
@@ -27,18 +27,18 @@ service|password|Password to connect the Jabber server|You have configured the p
 service|server|Your Jabber server IP od hostname|Spectrum 2 will connect that IP/hostname.
 service|port|Jabber server port to which Spectrum 2 connects|You have configured the port in your Jabber server config file in previous step.
 
-All config options with description are located at [Config file page](http://spectrum.im/documentation/configuration/config_file.html).
+All config options with description are located at [Config file page](/documentation/configuration/config_file.html).
 
 #### Choose the Spectrum 2 backend and legacy network
 
 You have to choose the Spectrum 2 backend and legacy network to which this Spectrum 2 gateway will connect the users.
 
-The default backend is [Libpurple backend](http://spectrum.im/documentation/backends/libpurple.html). Read the [Libpurple backend documentation](http://spectrum.im/documentation/backends/libpurple.html) to see how to choose particular legacy network. If you want to use different backend, change the path to it according to [List of backends](http://spectrum.im/documentation/backends/backends.html).
+The default backend is [Libpurple backend](/documentation/backends/libpurple.html). Read the [Libpurple backend documentation](/documentation/backends/libpurple.html) to see how to choose particular legacy network. If you want to use different backend, change the path to it according to [List of backends](/documentation/backends/backends.html).
 
 #### Choose the storage backend
 
 By default, Spectrum 2 uses SQLite3. You don't have to configure it explicitely.
-You can also use [MySQL](http://spectrum.im/documentation/configuration/mysql.html) or [PostgreSQL](http://spectrum.im/documentation/configuration/postgresql.html) instead of SQLite3 backend.
+You can also use [MySQL](/documentation/configuration/mysql.html) or [PostgreSQL](/documentation/configuration/postgresql.html) instead of SQLite3 backend.
 
 ### Start Spectrum 2
 
