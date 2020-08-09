@@ -52,6 +52,11 @@ body {
   height: 61px;
 }
 
+.animation {
+  width: 320px;
+  height: 90px;
+}
+
 #menu {
   margin-left: auto;
 }
