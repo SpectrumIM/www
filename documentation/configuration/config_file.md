@@ -1,49 +1,7 @@
 ---
-layout: config
+layout: page
 title: Spectrum 2
 ---
-
-> **\[database\]**
->
-> * [database](#databasedatabase)
-> * [password](#databasepassword)
-> * [port](#databaseport)
-> * [prefix](#databaseprefix)
-> * [server](#databaseserver)
-> * [type](#databasetype)
-> * [user](#databaseuser)
->
-> **\[logging\]**
->
-> * [backend_config](#loggingbackend_config)
-> * [config](#loggingconfig)
->
-> **\[registration\]**
->
-> * [auto_register](#registrationautoregister)
-> * [enable_public_registration](#registrationenablepublicregistration)
-> * [instructions](#registrationinstructions)
-> * [username_label](#registrationusernamelabel)
-> * [username_mask](#registrationusernamemask)
->
-> **\[service\]**
->
-> * [admin_jid](#serviceadminjid)
-> * [admin_password](#serviceadminpassword)
-> * [backend](#servicebackend)
-> * [backend_host](#servicebackendhost)
-> * [backend_port](#servicebackendport)
-> * [group](#servicegroup)
-> * [jid](#servicejid)
-> * [password](#servicepassword)
-> * [pidfile](#servicepidfile)
-> * [user](#serviceuser)
-> * [users_per_backend](#servicusersperbackend)
-> * [web_directory](#servicewebdirectory)
-> * [web_url](#serviceweburl)
-> * [working_dir](#serviceworkingdir)
-
-
 
 
 ### Types of configuration fields

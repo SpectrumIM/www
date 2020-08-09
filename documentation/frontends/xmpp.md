@@ -1,26 +1,7 @@
 ---
-layout: config
+layout: page
 title: Spectrum 2
 ---
-
-> **\[identity\]**
->
-> * [category](#identitycategory)
-> * [name](#identityname)
-> * [type](#identitytype)
->
->
->
-> **\[service\]**
->
-> * [allowed_servers](#serviceallowedservers)
-> * [cert](#servicecert)
-> * [cert_password](#servicecertpassword)
-> * [port](#serviceport)
-> * [server](#serviceserver)
-> * [server_mode](#serviceservermode)
-
-
 
 ## XMPP frontend Description
 

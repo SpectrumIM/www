@@ -1,5 +1,5 @@
 ---
-layout: config
+layout: page
 title: Spectrum 2
 ---
 
