@@ -59,6 +59,9 @@ body {
 .menuitem {
   padding: 12px;
   color: #fff;
+  text-decoration: none;
+  font-size: large;
+  font-weight: bolder;
 }
 
 .highlight {
