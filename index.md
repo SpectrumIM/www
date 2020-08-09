@@ -1,3 +1,8 @@
+---
+layout: page
+title: Spectrum 2
+---
+
 ![Spectrum 2 animation](animation.gif)
 
 ### About

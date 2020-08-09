@@ -1,8 +1,3 @@
----
-layout: page
-title: Spectrum 2
----
-
 Spectrum 2 introduces backends. Backends are external application which provides a way how to connect to legacy networks, so it's possible to use even different libraries than Libpurple to connect the legacy network. However, Libpurple is still the best library to use so far.
 
 This page contains the list of currently supported backends with the basic information about them.

@@ -1,8 +1,3 @@
----
-layout: page
-title: Spectrum 2
----
-
 Web Interface allows admins to control Spectrum 2 instances and users to register the transports and for example manage rooms they are connected to.
 
 ## Configuration

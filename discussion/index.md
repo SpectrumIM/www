@@ -1,8 +1,3 @@
----
-layout: page
-title: Spectrum 2
----
-
 ### Chat Room
 
 We have a chat room at [spectrum@conference.spectrum.im](xmpp:spectrum@conference.spectrum.im?join). To join it using your browser, [click here](https://chat.spectrum.im/). This is the preferred way of

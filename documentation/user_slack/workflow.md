@@ -1,10 +1,3 @@
----
-layout: page
-title: Spectrum 2
----
-
-
-
 ## How does Spectrum 2 interact with my team?
 
 Spectrum 2 interconnects the Slack channels with the 3rd-party network contact list and rooms as showed in the following image:

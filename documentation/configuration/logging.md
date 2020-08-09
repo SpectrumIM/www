@@ -1,8 +1,3 @@
----
-layout: page
-title: Spectrum 2
----
-
 Spectrum 2 uses [log4cxx](http://logging.apache.org/log4cxx/) for logging. In the main config file, there are two options to set full path to log4cxx configuration files which are then used for backends and Spectrum 2 main instance:
 
 	[logging]

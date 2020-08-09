@@ -1,9 +1,3 @@
----
-layout: page
-title: Spectrum 2
----
-
-
 ### Types of configuration fields
 
 Following types are used:

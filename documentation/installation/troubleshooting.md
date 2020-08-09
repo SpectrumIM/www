@@ -1,8 +1,3 @@
----
-layout: page
-title: Troubleshooting
----
-
 ## Troubleshooting FAQ
 
 > Q: Nothing worked!

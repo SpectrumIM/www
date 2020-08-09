@@ -1,8 +1,3 @@
----
-layout: page
-title: Spectrum 2
----
-
 ## Spectrum 2 frontends and backends
 
 Spectrum 2 supports multiple IM networks. Spectrum 2 distinguishes between **Frontend** and **Backend** networks.

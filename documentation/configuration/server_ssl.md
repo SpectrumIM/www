@@ -1,8 +1,3 @@
----
-layout: page
-title: Spectrum 2
----
-
 To configure SSL support for Spectrum2 in server mode, you have to generate server-side certificate, convert it to PKCS#12 format and configure path to it in Spectrum 2 config file.
 
 This article describes how to generate self-signed server certificate and use it in Spectrum 2.

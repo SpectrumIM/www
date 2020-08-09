@@ -1,8 +1,3 @@
----
-layout: page
-title: Spectrum 2
----
-
 ### Download
 
 Don't forget to check [Documentation](/documentation) and [Changelog](https://github.com/SpectrumIM/spectrum2/releases/latest) after downloading.

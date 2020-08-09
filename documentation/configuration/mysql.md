@@ -1,8 +1,3 @@
----
-layout: page
-title: Spectrum 2
----
-
 ## Editing the configuration file
 
 To configure Spectrum 2 to use MySQL database, you have to edit following options in database section:

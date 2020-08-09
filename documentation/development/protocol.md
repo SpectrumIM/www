@@ -1,8 +1,3 @@
----
-layout: page
-title: Spectrum 2
----
-
 ## Spectrum backend protocol
 
 Spectrum 2 communicates with backend using protocol based on [Google Protocol Buffers](http://code.google.com/p/protobuf/). This protocol has libraries for many languages, so backend can be written practically in any language.

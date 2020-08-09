@@ -1,8 +1,3 @@
----
-layout: page
-title: Spectrum 2
----
-
 #### About
 
 * [What is Spectrum 2?](about.html)

@@ -1,4 +1,51 @@
----
-layout: null
----
-{% include themes/twitter/my.html %}
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Spectrum 2 : Spectrum 2 IM transports" />
+
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+
+    <title>Spectrum 2</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/SpectrumIM/spectrum2">View on GitHub</a>
+
+<img id="logo" src="/logo.png" style="width:250px; margin-left: auto;margin-right: auto; display:block;"/>
+
+            <section id="menu" style="text-align: center;">
+            <a class="menuitem" href="/">About</a>
+            <a class="menuitem" href="/documentation">Documentation</a>
+            <a class="menuitem" href="/download">Download</a>
+            <a class="menuitem" href="/discussion">Discussion</a>
+            <a class="menuitem" href="https://github.com/SpectrumIM/spectrum2/issues">Issue tracker</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+      {{ content }}
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Spectrum 2 maintained by <a href="https://github.com/SpectrumIM">Spectrum Transports Team</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>

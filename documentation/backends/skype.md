@@ -1,8 +1,3 @@
----
-layout: page
-title: Spectrum 2
----
-
 ## Deprecation
 
 This backend is deprecated. You should use [libpurple](libpurple.html) backend with `prpl-skypeweb` instead.

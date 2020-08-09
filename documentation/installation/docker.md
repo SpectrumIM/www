@@ -1,8 +1,3 @@
----
-layout: page
-title: Spectrum 2
----
-
 ## About our Docker image
 
 The Docker image is based on latest stable Fedora. It includes Spectrum 2 and also lot of 3rd-party backends you would have to compile or install yourself when not using Docker image. This includes:

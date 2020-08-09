@@ -1,8 +1,3 @@
----
-layout: page
-title: Spectrum 2
----
-
 ## Editing the configuration file
 
 To configure Spectrum 2 to use PostgreSQL database, you have to edit some or more of the following options in database section.

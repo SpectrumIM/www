@@ -1,8 +1,3 @@
----
-layout: page
-title: Spectrum 2
----
-
 ## XMPP frontend Description
 
 XMPP frontend allows users to use XMPP as a frontend network for Spectrum 2.

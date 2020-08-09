@@ -1,8 +1,3 @@
----
-layout: page
-title: Spectrum 2
----
-
 ## Install Boost and libidn
 
 You have to have boost-devel and libidn-devel installed before compiling Swiften, otherwise it will compile against bundled version of Boost and libidn and Spectrum compilation will fail.

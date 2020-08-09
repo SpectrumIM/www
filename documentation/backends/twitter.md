@@ -1,8 +1,3 @@
----
-layout: page
-title: Spectrum 2
----
-
 ### Description
 
 Twitter backend is backend created during Summer of Code. It allows users to connect Twitter network.

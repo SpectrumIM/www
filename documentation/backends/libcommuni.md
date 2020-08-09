@@ -1,8 +1,3 @@
----
-layout: page
-title: Spectrum 2
----
-
 ## Description
 
 LibCommuni backend is IRC backend which uses [Communi IRC library](https://github.com/communi/communi/wiki). It's specialized IRC backend and it should replace libpurple IRC support.

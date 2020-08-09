@@ -1,8 +1,3 @@
----
-layout: page
-title: Spectrum 2
----
-
 Spectrum2 manager is tool for managing Spectrum 2 instances. It can manage local instances and also do some basic management of remote instances.
 
 ## Configuration

@@ -1,8 +1,3 @@
----
-layout: page
-title: Spectrum 2
----
-
 ### Before you start
 
 * Check that you really want to run Spectrum 2 in gateway mode and not in server mode. The difference is documentation on [What is Spectrum 2](/documentation/about.html) page.

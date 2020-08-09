@@ -1,8 +1,3 @@
----
-layout: page
-title: Spectrum 2
----
-
 Munin is tool for collecting various information from system and showing them in charts. Spectrum 2 contains munin plugin which can be used to generate useful charts in Munin.
 
 ### Configuration

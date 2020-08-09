@@ -1,8 +1,3 @@
----
-layout: page
-title: Spectrum 2
----
-
 ### Description
 
 Libpurple backend is backend based on Librpurple library supporting all the networks supported by libpurple.

@@ -1,6 +1,4 @@
 ---
-layout: page
-title: Spectrum 2
 redirect_from: "/documentation/installation/debian_ubuntu.html"
 ---
 

@@ -1,8 +1,3 @@
----
-layout: page
-title: Spectrum 2
----
-
 ## Slack frontend Description
 
 Slack frontend allows users to use Slack as a frontend network for Spectrum 2. This page describes how to setup your own Spectrum 2 instance with Slack frontend.

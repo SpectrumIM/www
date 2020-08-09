@@ -1,8 +1,3 @@
----
-layout: page
-title: Spectrum 2
----
-
 ## Our Slack privacy policy
 
 We are open-source project - if you don't like these privacy policy, you can always host Spectrum 2 on your own machine and own all your data.

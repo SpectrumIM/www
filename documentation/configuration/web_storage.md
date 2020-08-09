@@ -1,8 +1,3 @@
----
-layout: page
-title: Spectrum 2
----
-
 ### Web Storage
 
 Web storage is used to send images and files received by Spectrum 2 to end user. When new image or file is downloaded from the 3rd-party network, it is stored into `service.web_directory` directory

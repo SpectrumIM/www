@@ -1,8 +1,3 @@
----
-layout: page
-title: Spectrum 2
----
-
 If Spectrum is crashing, it’s useful to get backtrace to help us to find the reason. To get a backtrace you have to have debugging symbols installed or compiled Spectrum with them.
 
 ## Installing debugging symbols
