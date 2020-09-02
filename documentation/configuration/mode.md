@@ -17,7 +17,7 @@ Gateway mode represents the classic way how XMPP gateway works. You have to conf
 
 ## Server mode
 
-In server mode, Spectrum 2 behaves as standalone server. User then logins legacy networks by logging XMPP account like this one: "my_msn_name%hotmail.com@msn.domain.tld".
+In server mode, Spectrum 2 behaves as standalone server. User then logins legacy networks by logging XMPP account like this one: `my_msn_name%hotmail.com@msn.domain.tld`.
 
 #### Advantages:
 - Passwords are not stored on server.
