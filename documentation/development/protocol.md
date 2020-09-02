@@ -161,20 +161,20 @@ transport. If the backend is not able to login the user, it has to send
 
 Backend has to logout user from legacy network.
 
-  Variable     Description
-  ------------ ---------------------------------------------------------------
-  user         JID of XMPP user
-  legacyName   Legacy network user name (for example ICQ number) of the user
+  |Variable    |Description
+  |------------|---------------------------------------------------------------
+  |user        |JID of XMPP user
+  |legacyName  |Legacy network user name (for example ICQ number) of the user
 
 ### Type: TYPE\_STATUS\_CHANGED, Payload: Status
 
 Backend has to change the legacy network status of this user.
 
-  Variable        Description
-  --------------- --------------------------------------------------------
-  userName        JID of XMPP user
-  status          Status as defined by StatusType enum in protocol.proto
-  statusMessage   Status message
+ |Variable       |Description
+ |---------------|--------------------------------------------------------
+ |userName       |JID of XMPP user
+ |status         |Status as defined by StatusType enum in protocol.proto
+ |statusMessage  |Status message
 
 ### Type: TYPE\_JOIN\_ROOM, Payload: Room
 
@@ -183,61 +183,61 @@ participants back to Spectrum 2 using
 `Type: TYPE_PARTICIPANT_CHANGED, Payload: Participant`. As a last
 participant, the user who wanted to join the room has to be sent.
 
-  Variable   Description
-  ---------- --------------------------------
-  userName   JID of XMPP user
-  nickname   Nickname used to join the room
-  room       Name of the room
-  password   password
+ |Variable  |Description
+ |----------|--------------------------------
+ |userName  |JID of XMPP user
+ |nickname  |Nickname used to join the room
+ |room      |Name of the room
+ |password  |password
 
 ### Type: TYPE\_LEAVE\_ROOM, Payload: Room
 
 Backend has to disconnect this user from the room.
 
-  Variable   Description
-  ---------- --------------------------------
-  userName   JID of XMPP user
-  nickname   Nickname used to join the room
-  room       Name of the room
+ |Variable  |Description
+ |----------|--------------------------------
+ |userName  |JID of XMPP user
+ |nickname  |Nickname used to join the room
+ |room      |Name of the room
 
 ### Type: TYPE\_BUDDY\_TYPING, Payload: Buddy
 
 Backend should forward to buddy represented by buddyName information
 that XMPP user is typing now.
 
-  Variable    Description
-  ----------- -------------------------------------
-  userName    JID of XMPP user
-  buddyName   Name of the buddy in legacy network
+ |Variable   |Description
+ |-----------|-------------------------------------
+ |userName   |JID of XMPP user
+ |buddyName  |Name of the buddy in legacy network
 
 ### Type: TYPE\_BUDDY\_TYPED, Payload: Buddy
 
 Backend should forward to buddy represented by buddyName information
 that XMPP user paused typing now.
 
-  Variable    Description
-  ----------- -------------------------------------
-  userName    JID of XMPP user
-  buddyName   Name of the buddy in legacy network
+ |Variable   |Description
+ |-----------|-------------------------------------
+ |userName   |JID of XMPP user
+ |buddyName  |Name of the buddy in legacy network
 
 ### Type: TYPE\_BUDDY\_STOPPED\_TYPED, Payload: Buddy
 
 Backend should forward to buddy represented by buddyName information
 that XMPP user stopped tying and is not typing for some time.
 
-  Variable    Description
-  ----------- -------------------------------------
-  userName    JID of XMPP user
-  buddyName   Name of the buddy in legacy network
+ |Variable   |Description
+ |-----------|-------------------------------------
+ |userName   |JID of XMPP user
+ |buddyName  |Name of the buddy in legacy network
 
 ### Type: TYPE\_BUDDY\_REMOVED, Payload: Buddy
 
 Backend should remove buddy from the legacy network contact list.
 
-  Variable    Description
-  ----------- -------------------------------------
-  userName    JID of XMPP user
-  buddyName   Name of the buddy in legacy network
+ |Variable   |Description
+ |-----------|-------------------------------------
+ |userName   |JID of XMPP user
+ |buddyName  |Name of the buddy in legacy network
 
 ### Type: TYPE\_BUDDY\_CHANGED, Payload: Buddy
 
@@ -246,36 +246,36 @@ payload. If the buddy is not stored in legacy network contact list yet,
 it should add it there. Backend has to send
 `Type: TYPE_BUDDY_CHANGED, Payload: Buddy` back.
 
-  Variable    Description
-  ----------- --------------------------------------
-  userName    JID of XMPP user
-  buddyName   Name of the buddy in legacy network
-  alias       Alias
-  group       Group
-  blocked     True if this buddy should be blocked
+ |Variable   |Description
+ |-----------|--------------------------------------
+ |userName   |JID of XMPP user
+ |buddyName  |Name of the buddy in legacy network
+ |alias      |Alias
+ |group      |Group
+ |blocked    |True if this buddy should be blocked
 
 ### Type: TYPE\_ATTENTION, Payload: ConversationMessage
 
 Backend should forward to buddy represented by buddyName information
 that XMPP user wants his attention.
 
-  Variable    Description
-  ----------- -------------------------------------
-  userName    JID of XMPP user
-  buddyName   Name of the buddy in legacy network
-  message     Message
+ |Variable   |Description
+ |-----------|-------------------------------------
+ |userName   |JID of XMPP user
+ |buddyName  |Name of the buddy in legacy network
+ |message    |Message
 
 ### Type: TYPE\_CONV\_MESSAGE, Payload: ConversationMessage
 
 Backend should forward to buddy represented by buddyName message
 received from user.
 
-  Variable    Description
-  ----------- ---------------------------------------------------
-  userName    JID of XMPP user
-  buddyName   Name of the buddy in legacy network
-  message     Plain text message
-  xhtml       Message formatted using XHTML-IM XEP if available
+  Variable   |Description
+  -----------|---------------------------------------------------
+  userName   |JID of XMPP user
+  buddyName  |Name of the buddy in legacy network
+  message    |Plain text message
+  xhtml      |Message formatted using XHTML-IM XEP if available
 
 ### Type: TYPE\_VCARD, Payload: VCard
 
@@ -284,13 +284,13 @@ to VCard payload. If buddyName is not empty, backend has to fetch VCard
 of buddyName buddy including photo send it back using
 `Type: TYPE_VCard, Payload: Buddy`
 
-  Variable    Description
-  ----------- --------------------------------------------------------------------------------------------------------------------------------
-  userName    JID of XMPP user
-  buddyName   Name of the buddy in legacy network
-  id          Id used when sending the response with buddy's photo back. You have to use the same id in response as you received in request.
-  photo       Binary photo
-  nickname    Nickname
+  Variable   |Description
+  -----------|--------------------------------------------------------------------------------------------------------------------------------
+  userName   |JID of XMPP user
+  buddyName  |Name of the buddy in legacy network
+  id         |Id used when sending the response with buddy's photo back. You have to use the same id in response as you received in request.
+  photo      |Binary photo
+  nickname   |Nickname
 
 WrapperMessage payloads sent by backend
 ---------------------------------------
@@ -303,25 +303,25 @@ backend to Spectrum 2 main instance.
 Backend sends this payload when it receives new message from legacy
 network which should be forwarded to XMPP user.
 
-  Variable    Description
-  ----------- ---------------------------------------------------------------------------------------------------------------------------------------------------------
-  userName    JID of XMPP user
-  buddyName   Name of the buddy in legacy network who sent the message. If the conversation is room, buddyName is name of the room.
-  message     Plain text message
-  xhtml       Message formatted using XHTML-IM XEP if available
-  nickname    If the conversation is room, this is the nickname of user who sent the original message
-  carbon      If set, the message is a carbon copy of our own message sent in a different legacy network client. It should be treated as a message FROM us, not TO us
+  Variable   |Description
+  -----------|-----------------------------------------------------------------------------------------------------------------------------------------------------
+  userName   |JID of XMPP user
+  buddyName  |Name of the buddy in legacy network who sent the message. If the conversation is room, buddyName is name of the room.
+  message    |Plain text message
+  xhtml      |Message formatted using XHTML-IM XEP if available
+  nickname   |If the conversation is room, this is the nickname of user who sent the original message
+  carbon     |If set, the message is a carbon copy of our own message sent in a different legacy network client. It should be treated as a message FROM us, not TO us
 
 ### Type: TYPE\_ATTENTION, Payload: ConversationMessage
 
 Backend sends this payload when it receives attention request from
 legacy network which should be forwarded to XMPP user.
 
-  Variable    Description
-  ----------- -------------------------------------
-  userName    JID of XMPP user
-  buddyName   Name of the buddy in legacy network
-  message     Message
+  Variable   |Description
+  -----------|-------------------------------------
+  userName   |JID of XMPP user
+  buddyName  |Name of the buddy in legacy network
+  message    |Message
 
 ### Type: TYPE\_VCARD, Payload: VCard
 
@@ -329,74 +329,74 @@ Backend sends this payload as a response to
 `Type: TYPE_VCARD, Payload: VCard` received from main Spectrum 2
 instance.
 
-  Variable    Description
-  ----------- ---------------------------------------------------------------------
-  userName    JID of XMPP user
-  buddyName   Name of the buddy in legacy network
-  id          You have to use the same id in response as you received in request.
-  photo       Binary photo
-  nickname    Nickname
+  Variable   |Description
+  -----------|---------------------------------------------------------------------
+  userName   |JID of XMPP user
+  buddyName  |Name of the buddy in legacy network
+  id         |You have to use the same id in response as you received in request.
+  photo      |Binary photo
+  nickname   |Nickname
 
 ### Type: TYPE\_ROOM\_SUBJECT\_CHANGED, Payload: ConversationMessage
 
 Backend sends this payload when it receives room subject from legacy
 network which should be forwarded to XMPP user.
 
-  Variable    Description
-  ----------- ---------------------------------------
-  userName    JID of XMPP user
-  buddyName   Name of the room.
-  message     Plain text subject.
-  nickname    Nickname of user who set the subject.
+  Variable   |Description
+  -----------|---------------------------------------
+  userName   |JID of XMPP user
+  buddyName  |Name of the room.
+  message    |Plain text subject.
+  nickname   |Nickname of user who set the subject.
 
 ### Type: TYPE\_BUDDY\_TYPING, Payload: Buddy
 
 Backend sends this payload when buddy starts typing.
 
-  Variable    Description
-  ----------- -------------------------------------
-  userName    JID of XMPP user
-  buddyName   Name of the buddy in legacy network
+  Variable   |Description
+  -----------|------------------------------------
+  userName   | JID of XMPP user
+  buddyName  | Name of the buddy in legacy network
 
 ### Type: TYPE\_BUDDY\_TYPED, Payload: Buddy
 
 Backend sends this payload when buddy paused typing.
 
-  Variable    Description
-  ----------- -------------------------------------
-  userName    JID of XMPP user
-  buddyName   Name of the buddy in legacy network
+  Variable   |Description
+  -----------|-------------------------------------
+  userName   |JID of XMPP user
+  buddyName  |Name of the buddy in legacy network
 
 ### Type: TYPE\_BUDDY\_STOPPED\_TYPED, Payload: Buddy
 
 Backend sends this payload when buddy is not typing anymore.
 
-  Variable    Description
-  ----------- -------------------------------------
-  userName    JID of XMPP user
-  buddyName   Name of the buddy in legacy network
+  Variable   |Description
+  -----------|-------------------------------------
+  userName   |JID of XMPP user
+  buddyName  |Name of the buddy in legacy network
 
 ### Type: TYPE\_BUDDY\_CHANGED, Payload: Buddy
 
 Backend sends this payload when some information about Buddy changed.
 
-  Variable    Description
-  ----------- --------------------------------------
-  userName    JID of XMPP user
-  buddyName   Name of the buddy in legacy network
-  alias       Alias
-  group       Group
-  blocked     True if this buddy should be blocked
+  Variable   |Description
+  -----------|--------------------------------------
+  userName   |JID of XMPP user
+  buddyName  |Name of the buddy in legacy network
+  alias      |Alias
+  group      |Group
+  blocked    |True if this buddy should be blocked
 
 ### Type: TYPE\_BUDDY\_REMOVED, Payload: Buddy
 
 Backend sends this payload when it removes buddy from legacy network
 contact list or the buddy gets removed from the contact lists somehow.
 
-  Variable    Description
-  ----------- -------------------------------------
-  userName    JID of XMPP user
-  buddyName   Name of the buddy in legacy network
+  Variable   |Description
+  -----------|-------------------------------------
+  userName   |JID of XMPP user
+  buddyName  |Name of the buddy in legacy network
 
 ### Type: TYPE\_AUTH\_REQUEST, Payload: Buddy
 
@@ -406,10 +406,10 @@ legacy network. If XMPP user accepts the authorization request, Spectrum
 backend, otherwise it will send
 `Type: TYPE_BUDDY_REMOVED, Payload: Buddy`.
 
-  Variable    Description
-  ----------- -------------------------------------
-  userName    JID of XMPP user
-  buddyName   Name of the buddy in legacy network
+  Variable   |Description
+  -----------|-------------------------------------
+  userName   |JID of XMPP user
+  buddyName  |Name of the buddy in legacy network
 
 ### Type: TYPE\_CONNECTED, Payload: Connected
 
