@@ -39,6 +39,7 @@ Once you serialize particular Protocol Buffer structure, you can send it in foll
 
 | size | serialized Protocol Buffer structure |
 |------|--------------------------------------|
+| 0000 |......................................|
 
 
 * size - 4 bytes long size of "serialized Protocol Buffer structure" in network encoding (as returned by htonl() function - see "man htonl")
