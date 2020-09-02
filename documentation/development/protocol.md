@@ -60,7 +60,7 @@ In our case, the type is TYPE_PING and the payload is not defined. You should no
 
 ### Answering PING message
 
-PING message has to be answered with PONG. To Answer this message, just generate WrapperMessage using the module generated from protocol.proto and set the type to TYPE_PONG. Now serialie the message, prepend it with its size as defined above and send it to Spectrum 2.
+PING message has to be answered with PONG. To Answer this message, just generate WrapperMessage using the module generated from protocol.proto and set the type to TYPE_PONG. Now serialize the message, prepend it with its size as defined above and send it to Spectrum 2.
 
 Once you answer the PING request properly, Spectrum 2 will show following message in log:
 
@@ -95,7 +95,7 @@ declared in
 Spawning the backend
 --------------------
 
-1\. Spectrum 2 main instance spawns the backend when it's needed. Backend
+1. Spectrum 2 main instance spawns the backend when it's needed. Backend
 is executed with following arguments:
 `"--host localhost --port 32453"`.\
 2. Backend has to initalize itself and connect the Spectrum 2 main
@@ -108,7 +108,7 @@ since the requests are forwarded to it.
 User wants to login the legacy network
 --------------------------------------
 
-1\. `Type: TYPE_LOGIN, Payload: Login` packet is sent to backend, backend
+1. `Type: TYPE_LOGIN, Payload: Login` packet is sent to backend, backend
 starts connecting the user to legacy network.\
 2. When the user is connected, it populates his roster using
 `Type: TYPE_BUDDY_CHANGED, Payload: Buddy` packets.\
@@ -122,7 +122,7 @@ If something goes bad during the login process or later, backend sends
 User wants to join the room
 ---------------------------
 
-1\. `Type: TYPE_JOIN_ROOM, Payload: Room` packet is sent to backend,
+1. `Type: TYPE_JOIN_ROOM, Payload: Room` packet is sent to backend,
 backend starts joining the user to the room.\
 2. Backend populates room's participant list using
 `Type: TYPE_PARTICIPANT_CHANGED, Payload: Participant` packets. As last
