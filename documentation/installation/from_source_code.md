@@ -6,7 +6,7 @@ You have to have boost-devel and libidn-devel installed before compiling Swiften
 
 	git clone git://swift.im/swift
 	cd swift
-	git checkout swift-4.0
+	git checkout swift-4.x
 	./scons V=1 swiften_dll=1 Swiften SWIFTEN_INSTALLDIR=/usr/local force-configure=1
 	sudo ./scons V=1 swiften_dll=1 Swiften SWIFTEN_INSTALLDIR=/usr/local /usr/local
 
