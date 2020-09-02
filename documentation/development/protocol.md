@@ -151,11 +151,11 @@ user, it has to send `Type: TYPE_CONNECTED, Payload: Connected` back to
 transport. If the backend is not able to login the user, it has to send
 `Type: TYPE_DISCONNECTED, Payload: Disconnected`
 
-  Variable     Description
-  ------------ ---------------------------------------------------------------
-  user         JID of XMPP user who wants to login
-  legacyName   Legacy network user name (for example ICQ number) of the user
-  password     Legacy network password
+  |Variable    | Description
+  |------------|---------------------------------------------------------------
+  |user        |JID of XMPP user who wants to login
+  |legacyName  |Legacy network user name (for example ICQ number) of the user
+  |password    |Legacy network password
 
 ### Type: TYPE\_LOGOUT, Payload: Logout
 
