@@ -102,11 +102,11 @@ Spawning the backend
 
 1. Spectrum 2 main instance spawns the backend when it's needed. Backend
 is executed with following arguments:
-`"--host localhost --port 32453"`.\
+`"--host localhost --port 32453"`.
 2. Backend has to initalize itself and connect the Spectrum 2 main
-instance using `host` and `port`.\
+instance using `host` and `port`.
 3. Spectrum 2 main instance sends packet with payload of TYPE\_PING
-(stored in WrapperMessage object).\
+(stored in WrapperMessage object).
 4. Backend answers the TYPE\_PING payload with TYPE\_PONG payload and
 since the requests are forwarded to it.
 
@@ -114,9 +114,9 @@ User wants to login the legacy network
 --------------------------------------
 
 1. `Type: TYPE_LOGIN, Payload: Login` packet is sent to backend, backend
-starts connecting the user to legacy network.\
+starts connecting the user to legacy network.
 2. When the user is connected, it populates his roster using
-`Type: TYPE_BUDDY_CHANGED, Payload: Buddy` packets.\
+`Type: TYPE_BUDDY_CHANGED, Payload: Buddy` packets.
 3. It sends `Type: TYPE_CONNECTED, Payload: Connected` packet to
 Spectrum 2 main instance to inform it that user is connected to legacy
 network.
@@ -128,10 +128,10 @@ User wants to join the room
 ---------------------------
 
 1. `Type: TYPE_JOIN_ROOM, Payload: Room` packet is sent to backend,
-backend starts joining the user to the room.\
+backend starts joining the user to the room.
 2. Backend populates room's participant list using
 `Type: TYPE_PARTICIPANT_CHANGED, Payload: Participant` packets. As last
-Participant it has to send the user itself.\
+Participant it has to send the user itself.
 3. Backend can change room subject using
 `Type: TYPE_ROOM_SUBJECT_CHANGED, Payload: ConversationMessage`.
 
