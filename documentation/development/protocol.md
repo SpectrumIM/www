@@ -36,7 +36,10 @@ The protocol is defined in in [include/transport/protocol.proto](https://github.
 
 Once you serialize particular Protocol Buffer structure, you can send it in following format:
 
-	| size | serialized Protocol Buffer structure |
+
+| size | serialized Protocol Buffer structure |
+|------|--------------------------------------|
+
 
 * size - 4 bytes long size of "serialized Protocol Buffer structure" in network encoding (as returned by htonl() function - see "man htonl")
 
