@@ -11,8 +11,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install Bundler
-      run: sudo apt install bundler ruby-nokogiri
+      run: sudo gem install bundler
     - name: Install dependencies
-      run: bundle install --local
+      run: bundle install
     - name: Build
       run: bundle exec jekyll build
