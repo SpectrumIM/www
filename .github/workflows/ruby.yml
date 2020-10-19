@@ -13,6 +13,6 @@ jobs:
     - name: Install Bundler
       run: sudo apt install ruby-bundler
     - name: Install dependencies
-      run: bundle install --path vendor/bundle
+      run: bundle config set path 'vendor/bundle' && bundle install
     - name: Build
       run: bundle exec jekyll build
