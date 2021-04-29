@@ -8,6 +8,6 @@ updates:
   allow:
   - dependency-type: direct
   - dependency-type: indirect
-labels:
-  - "dependencies"
-  - "automerge"
+  labels:
+    - "dependencies"
+    - "automerge"
