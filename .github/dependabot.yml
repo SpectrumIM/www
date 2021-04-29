@@ -9,5 +9,5 @@ updates:
   - dependency-type: direct
   - dependency-type: indirect
 labels:
-    - "dependencies"
-    - "automerge"
+  - "dependencies"
+  - "automerge"
