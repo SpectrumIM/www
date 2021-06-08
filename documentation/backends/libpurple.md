@@ -65,4 +65,4 @@ Some purple options are available to this specific backend :
 
 - Mattermost account are set in mattermost group
 - Use purple.use-mmauthtoken = 1 , if mattermost server use gitlab authenication
-- Some trouble with channels https://github.com/EionRobb/purple-mattermost/issues/60 and https://github.com/SpectrumIM/spectrum2/issues/366
+- Some trouble with channels [https://github.com/EionRobb/purple-mattermost/issues/60](https://github.com/EionRobb/purple-mattermost/issues/60) and [https://github.com/SpectrumIM/spectrum2/issues/366](https://github.com/SpectrumIM/spectrum2/issues/366)
