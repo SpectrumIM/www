@@ -66,3 +66,15 @@ Some purple options are available to this specific backend :
 - Mattermost account are set in mattermost group
 - Use purple.use-mmauthtoken = 1 , if mattermost server use gitlab authenication
 - Some trouble with channels [https://github.com/EionRobb/purple-mattermost/issues/60](https://github.com/EionRobb/purple-mattermost/issues/60) and [https://github.com/SpectrumIM/spectrum2/issues/366](https://github.com/SpectrumIM/spectrum2/issues/366)
+
+
+### Notes on Mattermost support
+
+To use disccord pidging from debian, backports packages is required 
+	apt install purple-discord -t buster-backports
+	
+To manage connexion and accept captcha link, [harmony client](https://github.com/taylordotfish/harmony) must be installed on the server. Debian doesn't provide an updated version. Script must be installed from source.
+        apt install python3-pip libcairo2-dev 
+	pip3 install harmony-discord
+	
+
