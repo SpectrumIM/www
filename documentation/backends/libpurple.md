@@ -77,4 +77,12 @@ To manage connexion and accept captcha link, [harmony client](https://github.com
         apt install python3-pip libcairo2-dev 
 	pip3 install harmony-discord
 	
-
+Purple options are 
+       show-custom-emojis = [1|0]
+       display-images = [0|1]
+       open-chat-on-mention = [1|0]
+       display-images-large-servers = [0|1]
+       populate-blist = [1|0]
+       use-status-as-game = [0|1]
+       use-status-as-custom-status= [1|0]
+       disable-compress = [0|1]
