@@ -32,6 +32,7 @@ prpl-facebook| [https://github.com/jgeboski/purple-facebook](https://github.com/
 prpl-telegram| [https://github.com/majn/telegram-purple](https://github.com/majn/telegram-purple) | Telegram
 prpl-skypeweb| [https://github.com/EionRobb/skype4pidgin/tree/master/skypeweb](https://github.com/EionRobb/skype4pidgin/tree/master/skypeweb) | Skype
 prpl-eionrobb-mattermost| [https://github.com/EionRobb/purple-mattermost](https://github.com/EionRobb/purple-mattermost) | Mattermost
+prpl-eionrobb-discord| [https://github.com/EionRobb/purple-discord](https://github.com/EionRobb/purple-discord) | Discord
 
 
 These plugins are included by default in our Docker image.
@@ -66,3 +67,27 @@ Some purple options are available to this specific backend :
 - Mattermost account are set in mattermost group
 - Use purple.use-mmauthtoken = 1 , if mattermost server use gitlab authenication
 - Some trouble with channels [https://github.com/EionRobb/purple-mattermost/issues/60](https://github.com/EionRobb/purple-mattermost/issues/60) and [https://github.com/SpectrumIM/spectrum2/issues/366](https://github.com/SpectrumIM/spectrum2/issues/366)
+
+
+### Notes on Discord support
+
+To use discord from debian buster, backports packages is required 
+
+	apt install purple-discord -t buster-backports
+	
+To manage connexion and accept captcha link, [harmony client](https://github.com/taylordotfish/harmony) must be installed on the server. Debian doesn't provide an updated version. Script must be installed from source.
+
+        apt install python3-pip libcairo2-dev 
+	pip3 install harmony-discord
+	
+Purple options are :
+
+       [purple]
+       show-custom-emojis = [1|0]
+       display-images = [0|1]
+       open-chat-on-mention = [1|0]
+       display-images-large-servers = [0|1]
+       populate-blist = [1|0]
+       use-status-as-game = [0|1]
+       use-status-as-custom-status= [1|0]
+       disable-compress = [0|1]
