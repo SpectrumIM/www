@@ -71,23 +71,23 @@ Some purple options are available to this specific backend :
 
 ### Notes on Discord support
 
-To use discord from debian buster, backports packages is required 
+To use discord from debian buster, backports packages is required
 
 	apt install purple-discord -t buster-backports
-	
-To manage connexion and accept captcha link, [harmony client](https://github.com/taylordotfish/harmony) must be installed on the server. Debian doesn't provide an updated version. Script must be installed from source.
 
-        apt install python3-pip libcairo2-dev 
+To manage connection and accept captcha link, [harmony client](https://github.com/taylordotfish/harmony) must be installed on the server. Debian doesn't provide an updated version. Script must be installed from source.
+
+	apt install python3-pip libcairo2-dev
 	pip3 install harmony-discord
-	
+
 Purple options are :
 
-       [purple]
-       show-custom-emojis = [1|0]
-       display-images = [0|1]
-       open-chat-on-mention = [1|0]
-       display-images-large-servers = [0|1]
-       populate-blist = [1|0]
-       use-status-as-game = [0|1]
-       use-status-as-custom-status= [1|0]
-       disable-compress = [0|1]
+	[purple]
+	show-custom-emojis = [1|0]
+	display-images = [0|1]
+	open-chat-on-mention = [1|0]
+	display-images-large-servers = [0|1]
+	populate-blist = [1|0]
+	use-status-as-game = [0|1]
+	use-status-as-custom-status= [1|0]
+	disable-compress = [0|1]
