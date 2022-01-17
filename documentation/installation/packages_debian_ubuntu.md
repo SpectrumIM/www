@@ -2,12 +2,12 @@
 redirect_from: "/documentation/installation/debian_ubuntu.html"
 ---
 
-## Installing on Debian Buster from our packages repository
+## Installing on Debian Bullseye from our packages repository
 
 At the moment we only support AMD64 binary packages:
 
         $ curl https://packages.spectrum.im/packages.key | sudo apt-key add -
-        # echo "deb https://packages.spectrum.im/spectrum2/ buster main" >> /etc/apt/sources.list.d/spectrum.list
+        # echo "deb https://packages.spectrum.im/spectrum2/ bullseye main" >> /etc/apt/sources.list.d/spectrum.list
         # apt-get install apt-transport-https
         # apt-get update 
         # apt-get install spectrum2 spectrum2-backend-libpurple spectrum2-backend-libcommuni spectrum2-backend-twitter
