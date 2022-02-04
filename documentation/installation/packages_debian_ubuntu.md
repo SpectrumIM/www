@@ -20,15 +20,15 @@ You need to rebuild source libcommuni and spectrum packages from our source pack
         $ curl https://packages.spectrum.im/packages.key sudo apt-key add -
         $ curl https://swift.im/keys/packages.key | sudo apt-key add -
         $ apt-get install devscripts fakeroot libssl-dev libqt4-dev apt-transport-https
-        $ echo "deb-src https://packages.spectrum.im/spectrum2/ buster main" | sudo tee /etc/apt/sources.list.d/spectrum.list
+        $ echo "deb-src https://packages.spectrum.im/spectrum2/ bullseye main" | sudo tee /etc/apt/sources.list.d/spectrum.list
         $ apt-get update
         $ apt-get build-dep communi
         $ apt-get source communi
-        $ cd communi-3.5.0 && DEB_BUILD_OPTIONS=nocheck dpkg-buildpackage -rfakeroot -us -uc  && cd .. && sudo dpkg -i libcommuni*.deb
+        $ cd communi-3.6.0 && DEB_BUILD_OPTIONS=nocheck dpkg-buildpackage -rfakeroot -us -uc  && cd .. && sudo dpkg -i libcommuni*.deb
         $ apt-get build-dep spectrum2
         $ apt-get source spectrum2
         $ apt-get install libminiupnpc-dev libnatpmp-dev
-        $ cd spectrum2_2.1.1 && DEB_BUILD_OPTIONS=nocheck dpkg-buildpackage -rfakeroot -us -uc  && cd ..
+        $ cd spectrum2_2.1.2 && DEB_BUILD_OPTIONS=nocheck dpkg-buildpackage -rfakeroot -us -uc  && cd ..
 
 When the compilation process has ended the .deb packages for libcommuni and spectrum will be generated in the current directory and can be installed with `dpkg -i < filename.deb >`.
 
