@@ -15,10 +15,7 @@ As showed above, there is also special configuration variable in `[service]` sec
 Protocol variable| Description
 -----------------|------------
 prpl-jabber| Jabber
-prpl-aim|AIM
-prpl-icq|ICQ
-prpl-msn|MSN
-prpl-yahoo|Yahoo
+prpl-irc|IRC
 prpl-gg|Gadu Gadu
 prpl-novell|Groupwise
 
@@ -29,7 +26,8 @@ Spectrum 2 should work with any third-party libpurple plugin which is properly i
 Protocol variable| website | Description
 -----------------|------------|-----------
 prpl-facebook| [https://github.com/jgeboski/purple-facebook](https://github.com/jgeboski/purple-facebook) | Facebook
-prpl-telegram| [https://github.com/majn/telegram-purple](https://github.com/majn/telegram-purple) | Telegram
+telegram-tdlib| [https://github.com/ars3niy/tdlib-purple](https://github.com/ars3niy/tdlib-purple) | Telegram
+prpl-hehoe-whatsmeow | [https://github.com/hoehermann/purple-gowhatsapp](https://github.com/hoehermann/purple-gowhatsapp) | Whatsapp
 prpl-skypeweb| [https://github.com/EionRobb/skype4pidgin/tree/master/skypeweb](https://github.com/EionRobb/skype4pidgin/tree/master/skypeweb) | Skype
 prpl-eionrobb-mattermost| [https://github.com/EionRobb/purple-mattermost](https://github.com/EionRobb/purple-mattermost) | Mattermost
 prpl-eionrobb-discord| [https://github.com/EionRobb/purple-discord](https://github.com/EionRobb/purple-discord) | Discord
