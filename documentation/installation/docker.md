@@ -15,7 +15,7 @@ At first you have to install Docker. This is very well described on the official
 
 To download Spectrum 2 Docker image to your system, just run following command:
 
-	$ docker pull spectrum2/spectrum
+	$ docker pull cr.spectrum.im/spectrumim/spectrum
 
 You can also update Spectrum 2 using this command later.
 
@@ -45,7 +45,7 @@ You also have to create persistent directory to store various Spectrum 2 data li
 
 To start Spectrum 2 on background using Docker, all you have to do is running following Docker command:
 
-	$ docker run --name="spectrum2" -d --restart unless-stopped -v /opt/spectrum2/configuration:/etc/spectrum2/transports -v /opt/spectrum2/data:/var/lib/spectrum2 spectrum2/spectrum
+	$ docker run --name="spectrum2" -d --restart unless-stopped -v /opt/spectrum2/configuration:/etc/spectrum2/transports -v /opt/spectrum2/data:/var/lib/spectrum2 cr.spectrum.im/spectrumim/spectrum
 
 It will start Spectrum 2 and load the configuration files from `/opt/spectrum`. It also gives the spawned container name `spectrum2`.
 
@@ -69,7 +69,7 @@ To stop the Spectrum 2 container, use following Docker command:
 
 To upgrade Spectrum 2 container, you at first have to pull the updated Docker image, stop the current container, remove it and start it again using the new version of Docker image. It is very important to have all the Spectrum 2 data stored in the host system as described earlier in this document. Otherwise you won't be able to upgrade running container without loosing the data.
 
-	$ docker pull spectrum2/spectrum
+	$ docker pull cr.spectrum.im/spectrumim/spectrum
 	$ docker stop spectrum2
 	$ docker rm spectrum2
-	$ docker run --name="spectrum2" -d --restart unless-stopped -v /opt/spectrum2/configuration:/etc/spectrum2/transports -v /opt/spectrum2/data:/var/lib/spectrum2 spectrum2/spectrum
+	$ docker run --name="spectrum2" -d --restart unless-stopped -v /opt/spectrum2/configuration:/etc/spectrum2/transports -v /opt/spectrum2/data:/var/lib/spectrum2 cr.spectrum.im/spectrumim/spectrum
