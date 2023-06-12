@@ -18,7 +18,7 @@ At the moment only AMD64 binary packages are supported:
 You need to rebuild source libcommuni and spectrum packages from our source package repository:
 
         $ curl https://packages.spectrum.im/packages.key | sudo gpg --no-default-keyring --keyring=/etc/apt/trusted.gpg.d/spectrumim.gpg --import -
-        $ apt-get install devscripts fakeroot libssl-dev libqt4-dev apt-transport-https
+        $ apt-get install devscripts fakeroot apt-transport-https
         $ echo "deb-src [signed-by=/etc/apt/trusted.gpg.d/spectrumim.gpg] https://packages.spectrum.im/spectrum2/ bullseye main" | sudo tee /etc/apt/sources.list.d/spectrum.list
         $ apt-get update
         $ apt-get build-dep communi
