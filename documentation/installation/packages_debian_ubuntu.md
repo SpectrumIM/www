@@ -6,7 +6,7 @@ redirect_from: "/documentation/installation/debian_ubuntu.html"
 
 At the moment only AMD64 binary packages are supported:
 
-        $ curl https://packages.spectrum.im/packages.key | sudo gpg --no-default-keyring --keyring=/etc/apt/trusted.gpg.d/spectrumim.gpg --import -
+        $ curl https://packages.spectrum.im/packages.key | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/spectrumim.gpg
         # echo "deb [signed-by=/etc/apt/trusted.gpg.d/spectrumim.gpg] https://packages.spectrum.im/spectrum2/ bullseye main" >> /etc/apt/sources.list.d/spectrum.list
         # apt-get install apt-transport-https
         # apt-get update 
@@ -17,7 +17,7 @@ At the moment only AMD64 binary packages are supported:
 
 You need to rebuild source libcommuni and spectrum packages from our source package repository:
 
-        $ curl https://packages.spectrum.im/packages.key | sudo gpg --no-default-keyring --keyring=/etc/apt/trusted.gpg.d/spectrumim.gpg --import -
+        $ curl https://packages.spectrum.im/packages.key | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/spectrumim.gpg
         $ apt-get install devscripts fakeroot apt-transport-https
         $ echo "deb-src [signed-by=/etc/apt/trusted.gpg.d/spectrumim.gpg] https://packages.spectrum.im/spectrum2/ bullseye main" | sudo tee /etc/apt/sources.list.d/spectrum.list
         $ apt-get update
