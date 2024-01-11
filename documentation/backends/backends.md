@@ -18,6 +18,4 @@ Libpurple backend|AIM, Jabber, ICQ, MSN, Yahoo, Skype, Telegram, Facebook|`/usr/
 LibCommuni backend|IRC|`/usr/bin/spectrum2_libcommuni_backend`
 Frotz backend|Allows playing interactive-fiction games|`/usr/bin/spectrum2_frotz_backend`
 SMSTools3 backend|SMS using connected mobile phone|`/usr/bin/spectrum2_smstools3_backend`
-Twitter backend|Twitter|`/usr/bin/spectrum2_twitter_backend`
 Swiften backend|XMPP|`/usr/bin/spectrum2_swiften_backend`
-[Transwhat backend](http://github.com/stv0g/transwhat)|WhatsApp|`/opt/transwhat/transwhat.py`

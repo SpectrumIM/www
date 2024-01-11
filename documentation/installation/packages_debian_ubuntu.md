@@ -10,7 +10,7 @@ At the moment only AMD64 binary packages are supported:
         # echo "deb [signed-by=/etc/apt/trusted.gpg.d/spectrumim.gpg] https://packages.spectrum.im/spectrum2/ bullseye main" >> /etc/apt/sources.list.d/spectrum.list
         # apt-get install apt-transport-https
         # apt-get update 
-        # apt-get install spectrum2 spectrum2-backend-libpurple spectrum2-backend-libcommuni spectrum2-backend-twitter
+        # apt-get install spectrum2 spectrum2-backend-libpurple spectrum2-backend-libcommuni
 
 
 ## Installing on other Debian/Ubuntu-based distributions
@@ -37,5 +37,5 @@ When the compilation process has ended the .deb packages for libcommuni and spec
 
 If you want to test latest changes and save time on full rebuild of all packages, you can quickly create a single package from usual build tree, like:
 
-        # cpack -G DEB -D CPACK_PACKAGE_CONTACT="Your Name <your@email.address>" -D CPACK_PACKAGE_NAME="spectrum2-nightly" -D CPACK_PACKAGE_FILE_NAME="spectrum2-nightly" -D CPACK_PACKAGE_VERSION="2.1.x" -D CPACK_DEBIAN_PACKAGE_DEPENDS="libboost-all-dev (>= 1.49), libc6 (>= 2.14), libswiften2 | libswiften3, libcurl3, liblog4cxx10, libpurple0" -D CPACK_DEBIAN_PACKAGE_CONFLICTS="spectrum2, spectrum2-backend-libpurple, spectrum2-backend-twitter, spectrum2-backend-swiften, spectrum2-dbg, libtransport2.0, libtransport-plugin2.0"
+        # cpack -G DEB -D CPACK_PACKAGE_CONTACT="Your Name <your@email.address>" -D CPACK_PACKAGE_NAME="spectrum2-nightly" -D CPACK_PACKAGE_FILE_NAME="spectrum2-nightly" -D CPACK_PACKAGE_VERSION="2.1.x" -D CPACK_DEBIAN_PACKAGE_DEPENDS="libboost-all-dev (>= 1.49), libc6 (>= 2.14), libswiften2 | libswiften3, libcurl3, liblog4cxx10, libpurple0" -D CPACK_DEBIAN_PACKAGE_CONFLICTS="spectrum2, spectrum2-backend-libpurple, spectrum2-backend-swiften, spectrum2-dbg, libtransport2.0, libtransport-plugin2.0"
 

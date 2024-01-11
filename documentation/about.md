@@ -1,6 +1,6 @@
 ![Spectrum 2 animation](/animation.gif){:.animation}
 
-Spectrum 2 is an XMPP transport/gateway and XMPP server. It allows XMPP users to communicate with their friends who are using one of the supported networks. It supports a wide range of different networks such as ICQ, XMPP (Jabber, GTalk), AIM, MSN, Facebook, Twitter, Gadu-Gadu, IRC and SIMPLE. Spectrum is written in C++ and uses the Swiften XMPP library and different libraries for legacy networks. Spectrum 2 is open source and released under the GNU GPL2+ license.
+Spectrum 2 is an XMPP transport/gateway and XMPP server. It allows XMPP users to communicate with their friends who are using one of the supported networks. It supports a wide range of different networks such as ICQ, XMPP (Jabber, GTalk), AIM, MSN, Facebook, Gadu-Gadu, IRC and SIMPLE. Spectrum is written in C++ and uses the Swiften XMPP library and different libraries for legacy networks. Spectrum 2 is open source and released under the GNU GPL2+ license.
 
 ## Spectrum 2 frontends and backends
 
@@ -22,8 +22,6 @@ Currently, following frontends are supported:
 ## Supported backends
 
 * IRC
-* Twitter
-* Skype
 * XMPP
 * Facebook
 * MSN

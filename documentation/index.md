@@ -22,14 +22,12 @@
 * [Backends overview](backends/backends.html)
 * [Libpurple backend](backends/libpurple.html)
 * [Libcommuni backend](backends/libcommuni.html)
-* [Twitter backend](backends/twitter.html)
 * [Swiften backend](backends/swiften.html)
 
 #### Tutorials
 
 * [XMPP Frontend](frontends/xmpp.html)
    * [Spectrum 2 in gateway mode](tutorials/gateway_mode.html)
-   * [Beginners guide (prosody + spectrum2 + twitter backend)](tutorials/beginners_guide.html)
 
 #### Configuration
 
