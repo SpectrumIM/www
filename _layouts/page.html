@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset='utf-8' />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)">
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="description" content="Spectrum 2 : Spectrum 2 IM transports" />
+    <link rel="manifest" href="{{ "/site.webmanifest" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
     <link href="{{ "/css/style.css" | prepend: site.baseurl }}?{{ site.time | date: '%s%N' }}" rel="stylesheet" type="text/css" media="all">
     <title>Spectrum 2</title>
@@ -14,7 +16,11 @@
 <body>
     <div id="header">
         <div id="header-content">
-            <img id="logo" src="/logo.png" />
+            <picture>
+                <source srcset="/logo-dark.png" media="(prefers-color-scheme: dark)">
+                <img id="logo" src="/logo.png" alt="Spectrum 2" />
+            </picture>
+            <button id="hamburger" aria-label="Menu" title="Toggle menu">☰</button>
             <div id="menu">
                 <a class="menuitem" href="/">About</a>
                 <a class="menuitem" href="/documentation">Documentation</a>
@@ -27,6 +33,17 @@
     <div id="content">
         {{ content }}
     </div>
+
+    <script>
+      (function(){
+        var hamburger = document.getElementById('hamburger');
+        var menu = document.getElementById('menu');
+        hamburger.addEventListener('click', function(e){
+          e.stopPropagation();
+          menu.classList.toggle('open');
+        });
+      })();
+    </script>
 </body>
 
 </html>
