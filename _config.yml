@@ -10,11 +10,16 @@ production_url : https://spectrum.im
 url: https://spectrum.im
   
 plugins:
+  - jekyll-optional-front-matter
   - jekyll-redirect-from
   - jekyll-sitemap
 
 title: Spectrum 2
 description: Spectrum 2 transports
+
+optional_front_matter:
+  remove_originals: true
+
 defaults:
   -
     scope:
