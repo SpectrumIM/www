@@ -32,6 +32,7 @@ Directory| Description
 ---------|------------
 ./src|Libtransport source codes
 ./include/transport|Libtransport header
+./protocol|Transport-protocol source codes
 ./plugin/cpp|Libtransport-plugin source codes
 ./backends/|Various Spectrum 2 backends source codes
 ./spectrum/src|Spectrum 2 source codes
@@ -55,6 +56,7 @@ Libtransport uses:
 
  Name| Reason
 -----|-------
+Transport-protocol|Shared wire protocol and utilities (Config, Util, Logging, ...)
 Swiften library|Historical reasons. It's used as a utils library and basic data structures are represented using classes from Swiften library.
 log4cxx|Logging
 protobuf|Protocol for libtransport - backends communication
@@ -63,9 +65,20 @@ sqlite3|SQLite3 support
 pqxx|PostgreSQL support
 curl|HTTP requests for OAuth2 and REST frontends
 
+## Transport-protocol
+
+Transport-protocol is a small shared library used between Spectrum 2 and its backends. It contains the protobuf-generated wire protocol code (compiled from `include/transport/protocol.proto`) plus a handful of utilities (Config, Util, MemoryUsage, Logging). It has no dependency on Swiften, and is linked by both Libtransport and Libtransport-plugin.
+
+Transport-protocol is used by:
+
+Name| Reason
+----|-------
+Libtransport|Wire protocol and shared utilities
+Libtransport-plugin|Wire protocol and shared utilities
+
 ## Libtransport-plugin
 
-Libtransport-plugin is subset of Libtransport library and contains only basic things for backend development. The goal is to have smaller library with the less dependencies than Libtransport.
+Libtransport-plugin is subset of Libtransport library and contains only basic things for backend development. The goal is to have smaller library with the less dependencies than Libtransport. Unlike Libtransport, it has no dependency on Swiften, which allows backend plugins to be built and run without it.
 
 The Libtransport-plugin contains NetworkPlugin class, which is the base class for every C++ backend. Programmer has to create his own class inherited from this one and implement all the virtual methods to create new backend.
 
@@ -79,6 +92,7 @@ Libtransport-plugin uses:
 
  Name| Reason
 -----|-------
+Transport-protocol|Wire protocol and shared utilities
 log4cxx|Logging
 protobuf|Protocol for libtransport - backends communication
 
